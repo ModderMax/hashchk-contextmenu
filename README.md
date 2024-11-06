@@ -1,9 +1,9 @@
 # hashfile-contextmenu
 
-Add commands to get a hash string of a file to context menu of Windows Explorer.  
-The hash string is used as checksum. It is saved to a clip board.
+Add commands to verify a hash string of a file to context menu of Windows Explorer.  
+The hash string is used as checksum. It checks the file hash against the string in your clipboard.
 
-![ss01](ss01.png)
+# WIP
 
 Hash Algorithm: MD5, SHA1 and SHA256
 
