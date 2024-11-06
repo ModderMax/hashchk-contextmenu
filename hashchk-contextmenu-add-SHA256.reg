@@ -1,0 +1,7 @@
+Windows Registry Editor Version 5.00
+
+[HKEY_CLASSES_ROOT\*\shell\hashchkSHA256]
+@="Verify SHA&256"
+
+[HKEY_CLASSES_ROOT\*\shell\hashchkSHA256\command]
+@="powershell.exe -command \"$hash = (Get-FileHash -Algorithm SHA256 -Path '%1').Hash; if ((Get-Clipboard) -eq $hash) {Add-Type -AssemblyName PresentationFramework; [System.Windows.MessageBox]::Show('Hashes are Identical')} else {Add-Type -AssemblyName PresentationFramework; [System.Windows.MessageBox]::Show('Hashes do not Match')}\""
